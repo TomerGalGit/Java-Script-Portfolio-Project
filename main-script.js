@@ -14,18 +14,17 @@ function submitForm(event) {
 
   localStorage.setItem('contact', JSON.stringify(contactData));
 
-  document.getElementById("fullNameInput").value = "";
-  document.getElementById("emailInput").value = "";
-  document.getElementById("phoneInput").value = "";
-  document.getElementById("messageInput").value = "";
+  openFormModal();
 
-  openFormModal(); 
+  document.getElementById('fullNameInput').value = '';
+  document.getElementById('emailInput').value = '';
+  document.getElementById('phoneInput').value = '';
+  document.getElementById('messageInput').value = '';
 }
 
-
+const modal = document.getElementById('formModal');
+const closeBtn = modal.querySelector('.close');
 function openFormModal() {
-  const modal = document.getElementById('formModal');
-  const closeBtn = modal.querySelector('.close');
 
   const storedContactData = JSON.parse(localStorage.getItem('contact'));
 
@@ -35,16 +34,14 @@ function openFormModal() {
   document.getElementById('modalMessage').textContent = storedContactData.message || '';
 
   modal.style.display = 'block';
-
-  closeBtn.addEventListener('click', closeModal);
-
-  function closeModal() {
-    modal.style.display = 'none';
-    closeBtn.removeEventListener('click', closeModal);
-  }
 }
+closeBtn.addEventListener('click', closeModal);
+closeBtn.addEventListener('click', closeModal);
 
-
+function closeModal() {
+  modal.style.display = 'none';
+  closeBtn.removeEventListener('click', closeModal);
+}
 if (localStorage.getItem('contact')) {
   openFormModal();
 }
