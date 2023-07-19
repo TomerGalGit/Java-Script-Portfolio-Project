@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="main-script.js"></script>
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <section id="navibar">
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container-fluid" style="flex-flow: row-reverse">
+          <a class="navbar-brand logo" href="index.html">
+            <span>Tomer Gal </span>
+            <img src="Images/hasbulla2.png" class="icon" />
+          </a>
+        </div>
+      </nav>
+    </section>
+    <section id="home">
+      <div class="mt-4 p-5 main">
+        <h1>Portfolio</h1>
+        <p>Portfolio as part of a JavaScript project.</p>
+      </div>
+
+      <div class="icons">
+        <img src="Images/img-HTML.png" alt="HTML" />
+        <img src="Images/img-CSS.png" alt="CSS" />
+        <img src="Images/img-ES6.png" alt="ES6" />
+        <img src="Images/img-NodeJS.png" alt="NodeJS" />
+        <img src="Images/img-React.png" alt="React" />
+        <img src="Images/img-TypeScript.png" alt="TypeScript" />
+        <img src="Images/img-SASS.png" alt="Sass" />
+        <img src="Images/img-API.png" alt="API" />
+      </div>
+    </section>
+
+    <section id="about-me">
+      <img src="Images/hasbulla2.png" class="icon-big" />
+      <h3 style="font-family: Satisfy, cursive">About Me</h3>
+      <p id="txtAbout">
+        My name is Tomer Gal, I'm 23 years old, I live in Herzeliya. Currently
+        studying full-stack development in HackerU. In the past I've worked as a
+        QA tester for Incrediplay Ltd, as a lawyer's assistant in Eitan Mehulal
+        & Sadot and Gornitzky & Co in the intellectual property division. In
+        addition I served for 2 years and 8 months in the Nahal Brigade, as a
+        combat solider and as a commander for the 2019 November recruits. In my
+        free time I surf, skateboard and I also enjoy physical exercise,
+        road-trips and video games.
+      </p>
+      <br />
+      <a
+        href="downloads/קורות חיים מעודכן.pdf"
+        download="downloads/קורות חיים מעודכן.pdf"
+        class="button"
+        >Download Resume🔻</a
+      >
+    </section>
+    <section id="gallery">
+      <h3 style="font-family: Satisfy, cursive">The Gallery</h3>
+      <p style="font-size: 20px"></p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Images/GallerycardSnake.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Snake Project</h4>
+              <p class="card-text">
+                Snake Project- Move With The Arrow Keys Around The Map While
+                Trying To Consume As Many Apples You Can On The Way. Used
+                JavaScript, HTML and CSS.
+              </p>
+              <button id="SnakeBtn"class="projbtn">
+                <a href="/Snake Project/LandingPage.html">View Project</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Images/GallerycardTicTacToe.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Tic-Tac-Toe Project</h4>
+              <p class="card-text">
+                Tic Tac Toe Project- Take Turns Playing Tic Tac Toe.Each Turn A
+                Player Will Choose Where To Place His "X" Or His "O". Used
+                JavaScript, HTML and CSS.
+              </p>
+              <button id="TicBtn" class="projbtn">
+                <a href="/TicTacToe Project/LandingPage.html">View Project</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Images/GallerycardPuzzle.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Number's Puzzle Project</h4>
+              <p id="shortCard"class="card-text">
+                Number's Puzzle Project- Sort The Numbers In Order To Create The
+                Correct Formation. Used JavaScript, HTML and CSS.
+              </p>
+              <button id="PuzzBtn" class="projbtn">
+                <a href="/Puzzle Project/LandingPage.html">View Project</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="Images/TypeScript Background.png" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">TypeScript - To Do List</h4>
+              <p class="card-text">
+                TypeScript To-Do List- A Manageable And Customized To Do List.
+                Used TypeScript, JavaScript, HTML and CSS.
+              </p>
+              <button id="TypeBtn"class="projbtn">
+                <a href="/TypeScript Project/index.html">View Project</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Images/gallerycardAPI.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">API - Image Search Engine</h4>
+              <p class="card-text">
+                Rest API Project- Search For Any Image Using The Search Bar. The
+                API Used Is unsplash.com developer's API. Used JavaScript, HTML
+                and CSS.
+              </p>
+              <button id="APIBtn" class="projbtn">
+                <a href="/API Project/index.html">View Project</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="Images/GalleryWhackMole.png" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">Whack-A-Mole Project</h4>
+              <p class="card-text">
+                Whack-A-Mole Project- Choose Difficulity And Hit The Mole Everytime He Pops Out Of His Hole. Used JavaScript, HTML and CSS.
+              </p>
+              <button id="MoleBtn"class="projbtn">
+                <a href="/Whack-A-Mole Project/LandingPage.html">View Project</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mt-4 p-5">
+      <div class="col-sm-6">
+        <h2>Contact</h2>
+        <p>Please fill out your details below.</p>
+        <form onsubmit="submitForm(event)">
+          <label class="form-label">Full Name*:</label>
+          <input
+            id="fullNameInput"
+            class="form-control"
+            type="text"
+            placeholder="This field cannot remain empty"
+            required
+          />
+    
+          <label class="form-label">Email Address:</label>
+          <input
+            id="emailInput"
+            class="form-control"
+            type="email"
+            placeholder="abc123@abc123.com"
+          />
+    
+          <label class="form-label">Phone:</label>
+          <input
+            id="phoneInput"
+            class="form-control"
+            type="tel"
+            placeholder="051-111-1111"
+          />
+    
+          <label class="form-label">Message:</label>
+          <textarea
+            id="messageInput"
+            class="form-control"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button id="send-btn" type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="formModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modalHead">Thanks For Submitting! We Will Contact You Shortly!</h2>
+          <p><strong>Full Name:</strong> <span id="modalFullName"></span></p>
+          <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+          <p><strong>Phone:</strong> <span id="modalPhone"></span></p>
+          <p><strong>Message:</strong> <span id="modalMessage"></span></p>
+        </div>
+      </div>
+      <!-- Footer -->
+      <section id="links" class="row">
+        <div class="col-sm-2">
+          <a href="#"
+            ><img src="Images/Icon awesome-facebook-f.png" alt="facebook"
+          /></a>
+          <span>#Tomer Gal</span>
+        </div>
+        <div class="col-sm-2">
+          <a href="#"
+            ><img src="Images/Icon awesome-linkedin-in.png" alt="linkedin"
+          /></a>
+          <span>@Tomer Gal</span>
+        </div>
+        <div class="col-sm-2">
+          <a href="#"
+            ><img src="Images/Icon material-location-on.png" alt="location"
+          /></a>
+          <span>אבא הילל 4, רמת גן</span>
+        </div>
+        <div class="col-sm-2">
+          <a href="#"><img src="Images/Icon simple-email.png" alt="email" /></a>
+          <span>tomergal04@gmail.com</span>
+        </div>
+        <div class="col-sm-2">
+          <a href="#"
+            ><img src="Images/Icon simple-whatsapp.png" alt="phone"
+          /></a>
+          <span>+972-54-980-6100</span>
+        </div>
+      </section>
+    </section>
+    <footer>כל הזכויות לא שמורות</footer>
+  </body>
+</html>

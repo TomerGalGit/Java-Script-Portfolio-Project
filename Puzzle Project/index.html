@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Numbers Puzzle</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <div class="diff-container">
+    <h2 id="dbl">➡️CLICK HERE TO👆</h2>
+    <h1 id="select">SELECT DIFFICULITY</h1>
+    <button class="diffOption" id="easy">👶 Beginner</button>
+    <button class="diffOption" id="med">🤓 Intermediate</button>
+    <button class="diffOption" id="hard">💪 I Dare You</button>
+    <button class="how-to-play">i</button>
+  </div>
+
+  <body onload="createBoard()">
+
+  <div class="timerAndMoves">
+    <p id="timer"></p>
+    <p id="moves"></p>
+  </div>
+
+    <div class="frame">
+      <div class="board"></div>
+    </div>
+
+    <div id="easyAlert" class="modal-overlay">
+      <div class="modal-containerEasy">
+        <p>👶You Chose The Easy Difficulity👶</p>
+        <p>You Now Have 7 Minutes To Solve The Puzzle!</p>
+      </div>
+    </div>
+
+    <div id="medAlert" class="modal-overlay">
+      <div class="modal-containerMed">
+        <p>🤓You Chose The Medium Difficulity🤓</p>
+        <p>You Now Have 5 Minutes To Solve The Puzzle</p>
+      </div>
+    </div>
+
+    <div id="hardAlert" class="modal-overlay">
+      <div class="modal-containerHard">
+      <p>💪You Chose The Hardest Difficulity Big Boss💪</p>
+      <p>You Only Have 3 Minutes To Solve The Puzzle!😈</p>
+    </div>
+  </div>
+
+    <div class="HTPmodal-overlay">
+      <div class="modal-container">
+        <h4>🤔How To Play🤔</h4>
+        <p>
+          Use the mouse in order to rearrange the numbers in the correct order.     
+          Placing the mouse over a number will reveal that number's options of
+          advacement.
+        </p>
+        <p id="ex"><b>This is a winning screen:</b></p>
+        <img id="example" src="./Images/Untitled.png" alt="winningScreen" />
+        <p>Your time and moves on the board are counted on the top left corner.
+        </p>
+        <button class="closeModal">X</button>
+      </div>
+    </div>
+  </body>
+</html>

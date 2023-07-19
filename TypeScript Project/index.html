@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Type Script</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <section>
+      <div id="page1">
+        <div id="menu">
+            <div id="menu-items">
+                <a href="#page2" class="menu-item">Landing Page</a>
+                <a href="#mainH" class="menu-item">Project</a>
+                <a href="/" class="menu-item">Home</a>
+            </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="page2">
+        <div id="page2" class="section">
+            <h2>To Do List - TypeScript Project</h2>
+            <p>Organize and manage your tasks by creating a trackable to-do list. Simply fill out the task information below, like title, what priority the task holds and the description of the task.
+              completed tasks will become grey so you can see how productive you were. </p>
+            <p id="scroll">SCROLL DOWN FOR THE PROJECT👇</p>
+            <div class="rectangle">
+                <div class="icons">
+                    <img src="/Images/img-HTML.png" alt="HTML" />
+                    <img src="/Images/img-CSS.png" alt="CSS" />
+                    <img src="/Images/img-JS.png" alt="js" />
+                    <img src="/Images/img-TypeScript.png" alt="TypeScript" />
+                  </div>
+                </div>
+                <img id="example" src="/TypeScript Project/Images/ss1.png" alt="example of the app">
+        </div>
+      </div>
+
+    <h1 id="mainH">📎To Do List📜</h1>
+    
+    <div class="frame">
+      <header>
+          <h1 id="taskh1">➕ New Task ➕</h1>
+        <input type="text" id="title" placeholder="Task Title" />
+        <select>
+          <option disabled>Select Priority&hellip;</option>
+          <option value="0">Low</option>
+          <option value="1">Medium</option>
+          <option value="2">High</option>
+        </select>
+        <textarea
+          id="taskdesc"
+          name="description"
+          rows="4"
+          cols="50"
+          placeholder="Task Description"
+        ></textarea>
+        <button id="addbtn">+Add</button>
+      </header>
+      <h1>💪 My Tasks 💪</h1>
+      <div class="tasks"></div>
+  </div>
+
+    <div id="snackbar"></div>
+  </body>
+</html>

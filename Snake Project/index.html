@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+</head>
+
+
+<body onload="createBoard()">
+    <h1></h1>
+
+    <div class="frame">
+        <div class="board"></div>
+    </div>
+
+
+    <div class="diff-container"> 
+      <button class="diffOption" id="easy">👶 Beginner</button>
+      <button class="diffOption" id="med">🤓 Intermediate</button>
+      <button class="diffOption" id="hard">💪 I Got This</button>
+    </div>
+
+    <!-- סופר תוצאה -->
+    <div class="counter-container">
+        <span id="counter"></span>
+    </div>
+    
+    <!-- מודל סוף המשחק -->
+    <div class="modal-overlay">
+        <div class="modal-container">
+          <h4>😢</h4>
+          <h3>!Game Over</h3>
+          <p id="scoreFinish"></p>
+          <button class="closeModal">X</button>
+        </div>
+      </div>
+   
+</body>
+
+</html>

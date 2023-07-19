@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <button id="htp"class="how-to-play">i</button>
+    <button id="restart">Restart</button>
+
+    <div class="x-turn active-turn">X</div>
+    <div class="o-turn">O</div>
+
+    
+    <div class="frame">
+        <div class="board"></div>
+    </div>
+
+    <div class="modal-overlay1">
+        <div class="modal-container1">
+          <h4>🤔How To Play🤔</h4>
+          <p>Take turns marking "X" and "O", bear in mind the objective of Tic-Tac-Toe is to have three of your symbols make a straight line. The line can go sideways, up and down, or diagonally. The first player to make a straight line with three of their symbols wins! If nobody has a straight line of three symbols when the grid is filled, it's a tie! </p>
+          <p id="example">These are examples of a winning screen:</p>
+          <img class="example" src="./Images/winning1.png" alt="winning screen example">
+          <img class="example" src="./Images/winning2.png" alt="winning screen example">
+          <img class="example" src="./Images/winning3.png" alt="winning screen example">
+          <p id="startText">"X" Always starts. To know the correct turn look for the glowing box which will show whoose turn is it.
+        </p>
+          <button class="closeModal">X</button>
+        </div>
+      </div>
+</body>
+
+</html>

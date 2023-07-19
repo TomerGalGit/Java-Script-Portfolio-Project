@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+}
+.section {
+  height: 100vh;
+  width: 100%;
+}
+#page1 {
+  background-color: #fd881b;
+}
+
+#menu {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+  color: white;
+  font-size: 7rem;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  padding: 1rem 1vw 2rem 1rem;
+  transition: 0.4s;
+}
+#menu-items {
+  margin-left: 6rem;
+}
+
+#menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+#menu-items:hover > .menu-item:hover {
+  opacity: 1;
+}
+#page2 {
+  background-image: linear-gradient(155deg, #d8ab169c, #fffb00bb);
+  text-align: center;
+  height: 180vh;
+  font-weight: 200;
+}
+
+h2 {
+  color: #fff;
+  font-size: 45px;
+  padding-top: 80px;
+}
+p {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+#example {
+  width: 70%;
+  height: 40%;
+  margin-top: 100px;
+  box-shadow: 0 0 26px #0000006c;
+}
+.rectangle {
+  width: 100%;
+  height: 7rem;
+  background-color: white;
+  background-size: cover;
+  margin-top: 30px;
+  box-shadow: 0 0 26px #0000006c;
+}
+.icons {
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  direction: ltr;
+  padding: 8px;
+}
+.icons img {
+  height: 90px;
+  transition: 0.3s;
+}
+.icons img:hover {
+  scale: 1.15;
+}
+#scroll {
+  font-weight: bold;
+  color: #fff;
+}
+#playGame {
+  height: 200px;
+  width: 350px;
+  font-size: 45px;
+  color: rgb(231, 231, 231);
+  background-color:#ffe600;
+  border: none;
+  box-shadow: 0 0 5px 5px #9c9e0456;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 960px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
+}
+#playGame>a{
+  text-decoration: none;
+  color: white;
+}
+
+#playGame:hover {
+  scale: 1.05;
+  color: #ffffff;
+  box-shadow: 0 0 26px 21px #9c9e0456;
+  background-color: #ffd90085;
+}
+
+@media screen and (min-width: 1300px) {
+  #playGame {
+    margin-top: 850px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #example{
+    width: 80%;
+    height: 40%;
+  }
+  #playGame {
+    margin-top: 870px;
+    height: 100px;
+    width: 200px;
+    font-size: 25px;
+  }
+}
