@@ -104,7 +104,7 @@ p {
   transition: 0.5s;
   cursor: pointer;
   margin: auto;
-  margin-top: 960px;
+  margin-top: 760px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
 }
 #playGame>a{
@@ -121,7 +121,7 @@ p {
 
 @media screen and (min-width: 1300px) {
   #playGame {
-    margin-top: 850px;
+    margin-top: 750px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -130,7 +130,7 @@ p {
     height: 40%;
   }
   #playGame {
-    margin-top: 870px;
+    margin-top: 770px;
     height: 100px;
     width: 200px;
     font-size: 25px;
