@@ -24,6 +24,7 @@ function submitForm(event) {
 
 const modal = document.getElementById('formModal');
 const closeBtn = modal.querySelector('.close');
+const modalDisplay = document.querySelector('.modal-content')
 function openFormModal() {
 
   const storedContactData = JSON.parse(localStorage.getItem('contact'));
@@ -36,11 +37,10 @@ function openFormModal() {
   modal.style.display = 'block';
 }
 closeBtn.addEventListener('click', closeModal);
-closeBtn.addEventListener('click', closeModal);
 
 function closeModal() {
-  modal.style.display = 'none';
-  closeBtn.removeEventListener('click', closeModal);
+  modal.style.display = 'none' ;
+  modalDisplay.style.display = ' none !important;' ;
 }
 if (localStorage.getItem('contact')) {
   openFormModal();
