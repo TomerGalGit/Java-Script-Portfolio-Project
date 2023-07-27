@@ -463,7 +463,7 @@ input.login:focus {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.733);
-  display: grid;
+  display: none;
   place-items: center;
   transition: var(--transition);
 }

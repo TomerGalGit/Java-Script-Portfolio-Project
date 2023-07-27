@@ -138,3 +138,18 @@ p {
     height: 40%;
   }
 }
+@media screen and (max-width: 590px) {
+  body {
+    background-color: #7908fa80;
+  }
+  #page1{
+    width: 190vw;
+  }
+  #menu-items a{
+    font-size: 55px !important;
+    margin: 0;
+  }
+  #page2{
+    width: 190vw;
+  }
+}

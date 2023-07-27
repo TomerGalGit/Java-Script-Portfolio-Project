@@ -134,3 +134,18 @@ p {
     font-size: 25px;
   }
 }
+@media screen and (max-width: 590px) {
+  body {
+    background-color: #fd881b;
+  }
+  #page1{
+    width: 190vw;
+  }
+  #menu-items a{
+    font-size: 75px !important;
+    margin: 0;
+  }
+  #page2{
+    width: 190vw;
+  }
+}

@@ -106,7 +106,7 @@ p {
   display: block;
   margin-top: 35px;
 }
-#playGame>a{
+#playGame > a {
   text-decoration: none;
   color: white;
 }
@@ -125,14 +125,29 @@ p {
     font-size: 25px;
     margin: 0 auto;
   }
-  #example{
+  #example {
     width: 80%;
     height: 40%;
   }
   @media screen and (max-width: 900px) {
-    #example{
+    #example {
       width: 90%;
       height: 45%;
     }
-}
+  }
+  @media screen and (max-width: 590px) {
+    body {
+      background-color: #214389;
+    }
+    #page1{
+      width: 190vw;
+    }
+    #menu-items a{
+      font-size: 55px !important;
+      margin: 0;
+    }
+    #page2{
+      width: 190vw;
+    }
+  }
 }
